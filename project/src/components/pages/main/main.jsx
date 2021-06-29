@@ -1,12 +1,12 @@
 import React from 'react';
-import PlaceCard from '../place-card';
+import PlaceCard from '../../place-card';
 import PropTypes from 'prop-types';
 
-function IndexPage({cards}) {
+function Main({cards}) {
   return (
     <div className='page page--gray page--main'>
       <header className='header'>
-        <div className='container'>s
+        <div className='container'>
           <div className='header__wrapper'>
             <div className='header__left'>
               <a className='header__logo-link header__logo-link--active' href='#'>
@@ -104,8 +104,8 @@ function IndexPage({cards}) {
   );
 }
 
-IndexPage.propTypes = {
+Main.propTypes = {
   cards: PropTypes.array,
 };
 
-export default IndexPage;
+export default Main;
